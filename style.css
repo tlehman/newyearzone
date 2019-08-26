@@ -1,0 +1,26 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.unit {
+  font-size: 35px;
+}
+
+#countdown {
+  font-size: 30px;
+}
+
+.tz_buttons {
+  padding: 30px;
+  max-height: 200px;
+  overflow-y:auto;
+}
+
+button {
+  font-size: 25px;
+  margin: 6px;
+  padding: 6px;
+  width: 9em;
+}

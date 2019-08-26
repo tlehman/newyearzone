@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Year Zone</title>
+    <link rel="stylesheet" href="flags.min.css"></link>
+    <link rel="stylesheet" href="style.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></link>
+    <script src="https://www.webglearth.com/v2/api.js"></script>
+    <script type="text/javascript" src="new_year.js"></script>
+  </head>
+  <body onload="initialize()" style="height: 100%">
+    <h1>Countdown to New Year <span id="next_year"></span></h1>
+
+    <div id="countdown">
+      <div class="unit">
+        <span id="days"></span> Days
+      </div>
+      <div class="unit">
+        <span id="hours"></span> Hours
+      </div>
+      <div class="unit">
+        <span id="minutes"></span> Minutes
+      </div>
+      <div class="unit">
+        <span id="seconds"></span> Seconds
+      </div>
+    </div>
+
+    <div class="tz_buttons">
+      <button id="la" type="button" data-offset="-8" name="button" onclick="panTo(this)" data-lat="34.05223426" data-lng="-118.2436849" ><img src="blank.gif" class="flag flag-us" alt="United States" /> Los Angeles</button>
+      <button type="button" data-offset="-7" name="button" onclick="panTo(this)" data-lat="39.7392358" data-lng="-104.990251"><img src="blank.gif" class="flag flag-us" alt="United States" /> Denver</button>
+      <button type="button" data-offset="-6" name="button" onclick="panTo(this)" data-lat="19.4326077" data-lng="-99.133208"><img src="blank.gif" class="flag flag-mx" alt="Mexico" /> Mexico City</button>
+      <button type="button" data-offset="-5" name="button" onclick="panTo(this)" data-lat="40.7127753" data-lng="-74.0059728"><img src="blank.gif" class="flag flag-us" alt="United States" /> New York</button>
+      <button type="button" data-offset="-4" name="button" onclick="panTo(this)" data-lat="6.8012793" data-lng="-58.1551255"><img src="blank.gif" class="flag flag-gy" alt="Guayana" />  Georgetown</button>
+      <button type="button" data-offset="-3" name="button" onclick="panTo(this)" data-lat="64.1814098" data-lng="-51.6941381"><img src="blank.gif" class="flag flag-dk" alt="Denmark" />  Nuuk</button>
+      <button type="button" data-offset="-2" name="button" onclick="panTo(this)" data-lat="-54.429579" data-lng="-36.587909"><img src="blank.gif" class="flag flag-gs" alt="United Kingdom" /> South Georgia</button>
+      <button type="button" data-offset="-1" name="button" onclick="panTo(this)" data-lat="16.5388" data-lng="-23.0418"><img src="blank.gif" class="flag flag-cv" alt="Cape Verde" /> Cape Verde</button>
+      <button type="button" data-offset="0" name="button"  onclick="panTo(this)" data-lat="51.5073509" data-lng="-0.1277583"><img src="blank.gif" class="flag flag-uk" alt="United Kingdom" /> London</button>
+      <button type="button" data-offset="1" name="button"  onclick="panTo(this)" data-lat="48.864716" data-lng="2.349014"><img src="blank.gif" class="flag flag-fr" alt="France" /> Paris</button>
+      <button type="button" data-offset="2" name="button"  onclick="panTo(this)" data-lat="-26.2041028" data-lng="28.0473051"><img src="blank.gif" class="flag flag-za" alt="South Africa" /> Johannesburg</button>
+      <button type="button" data-offset="3" name="button"  onclick="panTo(this)" data-lat="39.9333635" data-lng="32.8597419"><img src="blank.gif" class="flag flag-tr" alt="Turkey" /> Ankara</button>
+      <button type="button" data-offset="4" name="button"  onclick="panTo(this)" data-lat="25.2048493" data-lng="55.2707828"><img src="blank.gif" class="flag flag-ae" alt="United Arab Emirates" /> Dubai</button>
+      <button type="button" data-offset="5.5" name="button" onclick="panTo(this)" data-lat="28.613889" data-lng="77.208889"><img src="blank.gif" class="flag flag-in" alt="India" /> Delhi</button>
+      <button type="button" data-offset="8" name="button"  onclick="panTo(this)" data-lat="39.913818" data-lng="116.363625"><img src="blank.gif" class="flag flag-cn" alt="China" /> Beijing</button>
+      <button type="button" data-offset="9" name="button"  onclick="panTo(this)" data-lat="35.6894875" data-lng="139.6917064"><img src="blank.gif" class="flag flag-jp" alt="Japan" /> Tokyo</button>
+    </div>
+
+    <div id="earth_div" style="width:100%;top:50%;border:1px solid gray; padding:2px;"></div>
+  </body>
+</html>
